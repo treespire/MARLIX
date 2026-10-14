@@ -53,23 +53,14 @@ SECTIONS
     /* Move to the next memory page for .data */
     . = ALIGN(CONSTANT(MAXPAGESIZE));
 
-    /* C++ is a language that allows for global constructors. In order to obtain the */
-    /* address of the ".init_array" section we need to define a symbol for it. */
-    /* The section is writable, so it needs to be mapped to :data. */
-    .init_array : {
-        __init_array = .;
-        KEEP(*(SORT_BY_INIT_PRIORITY(.init_array.*)))
-        KEEP(*(.init_array))
-        __init_array_end = .;
-    } :data
-
     .data : {
         *(.data .data.*)
     } :data
 
     /* NOTE: .bss needs to be the last thing mapped to :data, otherwise lots of */
     /* unnecessary zeros will be written to the binary. */
-    /* If you need, for example, .fini_array, it should be placed above this. */
+    /* If you need, for example, .init_array and .fini_array, those should be placed */
+    /* above this. */
     .bss : {
         *(.bss .bss.*)
         *(COMMON)

@@ -4,10 +4,11 @@ This project includes material from third-party projects. Their licences are
 reproduced below. This file does not change the licence of this project
 itself, which is described in `LICENSE`.
 
-## limine-cxx-template
+## limine-c-template
+
 
 Project template files from
-[Limine-Bootloader/limine-cxx-template](https://github.com/Limine-Bootloader/limine-cxx-template),
+Limine-Bootloader/limine-c-template: (https://github.com/Limine-Bootloader/limine-c-template),
 licensed under the Zero-Clause BSD licence (0BSD).
 
 ```

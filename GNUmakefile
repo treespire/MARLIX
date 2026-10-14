@@ -4,7 +4,7 @@
 # Delete the target of a failed recipe.
 .DELETE_ON_ERROR:
 
-# Target architecture to build for. Default to riscv64.
+# Target architecture to build for. Default to x86_64.
 ARCH := riscv64
 
 # Default user QEMU flags. These are appended to the QEMU command calls.

@@ -2,7 +2,6 @@
 /.cache
 /.deps-obtained
 /freestanding-c-hdrs
-/freestanding-cxx-hdrs
 /cc-runtime
 /limine-protocol
 /bin-*

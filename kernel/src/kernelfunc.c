@@ -1,4 +1,4 @@
-static void serial(char text) {
+void serial(char text) {
 
     register long register1 __asm__("a0") = text;
     register long register2 __asm__("a7") = 1;
@@ -9,7 +9,7 @@ static void serial(char text) {
 
 // making it work
 
-static void SPrint(char *string) {
+void SPrint(char *string) {
     while (*string) {
         serial(*string++);
     }

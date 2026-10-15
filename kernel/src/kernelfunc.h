@@ -4,5 +4,6 @@
 
 void serial(char text);
 void SPrint(char *string);
+size_t strlen(volatile const char *text);
 
 #endif

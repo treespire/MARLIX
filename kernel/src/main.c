@@ -13,4 +13,6 @@ void kmain(void) {
     SPrint("hello from MARLIX\n");
     SPrint("-- Reporting marlix kernel v. 1.0 -- \n");
 
+      SPrint((char*)strlen("hello"));
+
 }

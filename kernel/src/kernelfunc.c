@@ -14,3 +14,11 @@ void SPrint(char *string) {
         serial(*string++);
     }
 }
+
+size_t strlen( volatile const char  *text) {
+    volatile size_t len = 0;
+    while (text[len] != 0) {
+       len++;
+    }
+    return len;
+}

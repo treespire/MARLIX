@@ -33,12 +33,8 @@ static volatile uint64_t limine_requests_end_marker[] = LIMINE_REQUESTS_END_MARK
 // Halt and catch fire function.
 static void hcf(void) {
     for (;;) {
-#if defined (__x86_64__)
-        asm ("hlt");
-#elif defined (__aarch64__) || defined (__riscv)
+#if defined (__aarch64__) || defined (__riscv)
         asm ("wfi");
-#elif defined (__loongarch64)
-        asm ("idle 0");
 #endif
     }
 }

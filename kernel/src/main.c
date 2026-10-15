@@ -10,6 +10,6 @@ void kmain(void) {
     init_graphics();
 
     //test
-    serial("hello from MARLIX");
+    SPrint("hello from MARLIX");
 
 }

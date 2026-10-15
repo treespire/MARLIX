@@ -5,3 +5,12 @@ static void serial(char text) {
     asm volatile ("ecall" : "+r" (register1) : "r" (register2) : "memory");
 
 }
+
+
+// making it work
+
+static void SPrint(char *string) {
+    while (*string) {
+        serial(*string++);
+    }
+}

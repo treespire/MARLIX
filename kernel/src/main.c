@@ -10,6 +10,6 @@ void kmain(void) {
     init_graphics();
 
     //test
-    SPrint("hello from MARLIX \n");
+    SPrint("hello from MARLIX");
 
 }

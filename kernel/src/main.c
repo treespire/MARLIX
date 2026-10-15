@@ -6,6 +6,6 @@
 
 void kmain(void) {
 
-    init_graphics();
+    //init_graphics();
 
 }

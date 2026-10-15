@@ -4,11 +4,11 @@
 # Delete the target of a failed recipe.
 .DELETE_ON_ERROR:
 
-# Target architecture to build for. Default to x86_64.
+# Target architecture to build for. Default to riscv64.
 ARCH := riscv64
 
 # Default user QEMU flags. These are appended to the QEMU command calls.
-QEMUFLAGS := -m 2G
+QEMUFLAGS := -m 2G  -serial mon:stdio
 
 # Internal architecture specific variables that should not be changed by the
 # user. x86_64 images get an MBR, the most portable form for BIOS and UEFI.

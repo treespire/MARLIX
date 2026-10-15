@@ -63,7 +63,7 @@ static void fb_pattern(struct limine_framebuffer *fb) {
     volatile uint32_t *fb_ptr = fb->address;
     for (size_t y = 0; y < fb->height; y++) {
         for (size_t x = 0; x < fb->width; x++) {
-            fb_ptr[y * (fb->pitch / 4) + x] = fb_pixel(fb, 0, 0, 0);
+            fb_ptr[y * (fb->pitch / 4) + x] = fb_pixel(fb, 255, 0, 0);
         }
     }
 }

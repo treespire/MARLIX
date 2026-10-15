@@ -3,9 +3,13 @@
 #include <stdbool.h>
 #include <limine.h>
 #include "graphics.h"
+#include "kernelfunc.h"
 
 void kmain(void) {
 
     init_graphics();
+
+    //test
+    serial("hello from MARLIX");
 
 }

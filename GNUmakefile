@@ -8,7 +8,7 @@
 ARCH := riscv64
 
 # Default user QEMU flags. These are appended to the QEMU command calls.
-QEMUFLAGS := -m 2G  -serial mon:stdio
+QEMUFLAGS := -m 2G 
 
 # Internal architecture specific variables that should not be changed by the
 # user. x86_64 images get an MBR, the most portable form for BIOS and UEFI.

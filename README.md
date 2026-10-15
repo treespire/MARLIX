@@ -18,10 +18,9 @@ and any help is gratefully appreciated.
 
 ### Why this project exists
 
-The project is developing to use the Plan 9 directory structure and the 9P protocol as the main protocol to focus on, something mostly not used by most operating systems today,
-in favor of the standard directory structure.
-It is riscv64 first, though I'll keep makefile options for other architectures (in case someone wants to port this desperately).
-
+The project is being built because I personally need an operating system to develop for education and as a hobby. It won't replace my current host operating system but it's designed in a way that it eventually should and  break with standard directory structures in favor of a cleaner, less sharded directory structure.
+It is riscv64 first, though I'll keep makefile options for other architectures (in case someone wants to port this desperately),
+I'm trying to base this on the System V ABI to keep software running on this as soon as possible.
 
 ## Warning
 
